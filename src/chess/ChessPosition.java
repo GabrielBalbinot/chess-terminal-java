@@ -8,6 +8,8 @@ public class ChessPosition {
 	private Integer row;
 	
 	public ChessPosition(Character column, Integer row) {
+		
+		column = Character.toLowerCase(column);
 		if (column < 'a' || column > 'h' || row < 1 || row > 8) {
 			throw new ChessException("Error instantiating ChessPosition. Valid values are from A1 to H8.");
 		}
