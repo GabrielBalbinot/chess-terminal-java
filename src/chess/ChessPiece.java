@@ -11,6 +11,7 @@ public abstract class ChessPiece extends Piece {
 
 	public ChessPiece(Board board, Color color) {
 		super(board);
+		moveCount = 0;
 		this.color = color;
 	}
 
